@@ -16,13 +16,13 @@ Here I'm going to deploy and execute the lynis project using docker.
         docker run [image_name]
         
         
-To run the LYNIS in the container
+### To run the LYNIS in the container
 
-1. we need to get **conatiner_id**. By running for following command we can able what all the image are currently in running
+1. we need to get ***conatiner_id***. By running for following command we can able what all the image are currently in running
 
         docker ps
 
-2. After getting the **container_id** now we will execute the *lynis* inside the container:
+2. After getting the ***container_id*** now we will execute the *lynis* inside the container:
 
         docker exec [container_id] /bin/bash -c "cd /root/lynis;./lynis audit system"
         
